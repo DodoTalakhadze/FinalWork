@@ -40,7 +40,7 @@
         </div>
       </header>
       <!-- section1 -->
-      <section class="sect1">
+      <section class="sect1 background_image">
         <div>
           <h2>Earth, Water, Air and Fire</h2>
           <button>Shop Now</button>
@@ -49,16 +49,16 @@
       <!-- section2 -->
       <section class="sect2">
         <div class="grid_container">
-          <div class="grid_item1">
+          <div class="grid_item1 background_image">
             <button>Pottery Classes</button>
           </div>
-          <div class="grid_item2">
+          <div class="grid_item2 background_image">
             <button>Design Process</button>
           </div>
-          <div class="grid_item3">
+          <div class="grid_item3 background_image">
             <button>Gift Pottery</button>
           </div>
-          <div class="grid_item4">
+          <div class="grid_item4 background_image">
             <button>Ceramic Painting</button>
           </div>
         </div>
@@ -77,7 +77,7 @@
               </div>
             </div>
           </article>
-          <article class="card">
+          <article class="card card2">
             <img src="images/Rectangle 95.svg" alt="pottery" />
             <div class="card_div">
               <h5>product title</h5>
@@ -87,7 +87,7 @@
               </div>
             </div>
           </article>
-          <article class="card">
+          <article class="card card3">
             <img src="images/Rectangle 96.svg" alt="pottery" />
             <div class="card_div">
               <h5>product title</h5>
@@ -110,12 +110,14 @@
         </div>
       </section>
       <!-- section4 -->
-      <section class="sect4">
+      <section class="sect4 background_image">
         <div>
           <h2>Subscribe to Newsletter</h2>
-          <form action="">
-            <input type="text" name="" id="">
-            <button>SUBSCRIBE</button>
+          <form action="" name="email" class="border_style_pink">
+            <input type="email" name="email" placeholder="Email Address" />
+            <button type="submit">
+              SUBSCRIBE
+            </button>
           </form>
         </div>
       </section>
@@ -125,20 +127,47 @@
           <h6>Help</h6>
           <nav>
             <ul>
-              <li><a href="">Help Centre</a></li>
-              <li><a href="">Privacy Settings</a></li>
+              <li><a href="index.html">Help Centre</a></li>
+              <li><a href="index.html">Privacy Settings</a></li>
             </ul>
           </nav>
+         
           <div class="social_icon_container">
-            <img src="images/logos_youtube.svg" alt="youtube_logo">
-            <img src="images/skill-icons_instagram.svg" alt="instagram_logo">
-            <img src="images/logos_facebook.svg" alt="facebook_logo">
+            <a href="https://www.youtube.com/" target="_blank">
+            <img src="images/logos_youtube.svg" alt="instagram_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="images/skill-icons_instagram.svg" alt="instagram_logo">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/logos_facebook.svg" alt="facebook_logo">
+            </a>
           </div>
         </div>
         <a href="index.html">
           <img src="images/logo (1).svg" class="main_logo" alt="logo" />
         </a>
-        <div></div>
+
+        <div class="contact_container">
+          <div>
+            <a href="tel: +123 45 67  89">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <span>+123 45 67  89</span>
+          </div>
+          <div>
+            <a href="mailto: example@mail.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <span>example@mail.com</span>
+          </div>
+          <div>
+            <a href="https://www.google.com/maps/place/30+Shota+Rustaveli+Ave,+T'bilisi/@41.700852,44.7945746,17z/data=!3m1!4b1!4m6!3m5!1s0x40440cdd1af7ece7:0xa0647da208fff81e!8m2!3d41.700852!4d44.7945746!16s%2Fg%2F11g_7kst5?entry=ttu" target="_blank">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+            <span>Rustaveli avenue, 30</span>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

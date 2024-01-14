@@ -55,6 +55,8 @@ header nav ul {
 .sect1 {
   background-image: url(../images/cover1.png);
   height: 560px;
+}
+.background_image{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,12 +118,9 @@ h2 {
 }
 .grid_container div {
   border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .grid_item1 {
   grid-area: item1;
@@ -164,27 +163,30 @@ h2 {
   gap: 40px;
 }
 .card_container {
-  display: flex;
-  flex-direction: row;
   column-gap: 24px;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
+  white-space: nowrap;
+  /* 1230-დან გაუჩნდეს სქროლი width: 980px; */
 }
 .card {
   border-radius: 8px;
   background: #fff;
-  display: flex;
+  display: inline-block;
   width: 282px;
   height: 314px;
   padding: 16px;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
+}
+.card2{
+  margin-inline: 24px;
+}
+.card3{
+  margin-right: 24px;
 }
 .card_div {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 16px;
 }
 .card h5 {
   color: #b53b1b;
@@ -214,17 +216,51 @@ h2 {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
+  border: none;
 }
 /* section4 */
 .sect4 {
   background-image: url(../images/Rectangle\ 98.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 480px;
+}
+.sect4 div {
+  width: 486px;
+  height: 160px;
   display: flex;
+  flex-direction: column;
+  row-gap: 56px;
   justify-content: center;
   align-items: center;
+}
+.sect4  form{
+  display: flex;
+}
+.sect4 form input {
+  width: 331px;
+  height: 56px;
+  padding-left: 16px;
+  border-radius: 10px 0px 0px 10px; 
+  border: 1px solid #fff;
+  background: #d5906e;
+  outline: none;
+}
+.sect4 input::placeholder{
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sect4 button {
+  height: 56px;
+  padding: 17px 25px 17px 26px;
+  color: #402101;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 0px 10px 10px 0px;
+  background: #fff;
+  border: none;
 }
 /* footer  */
 footer {
@@ -241,16 +277,42 @@ footer h6 {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+  margin-bottom: 16px;
 }
-footer nav ul li a{
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer nav ul li a {
   color: #fff;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px; 
+  line-height: 24px;
 }
 .social_icon_container {
   display: flex;
   gap: 24px;
-  margin-bottom: 16px;
+  margin-top: 32px;
 }
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.contact_container a {
+  margin-right: 16px;
+}
+.contact_container i {
+  color: #ffffff;
+  font-size: 18px;
+}
+.contact_container span {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* about.html */
