@@ -181,3 +181,76 @@ h2 {
   justify-content: center;
   gap: 16px;
 }
+.card_div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card h5 {
+  color: #b53b1b;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.price p {
+  color: #b53b1b;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.price button {
+  border-radius: 8px;
+  background: #b53b1b;
+  padding: 6px 19px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* section4 */
+.sect4 {
+  background-image: url(../images/Rectangle\ 98.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* footer  */
+footer {
+  width: inherit;
+  display: inline-flex;
+  padding: 80px 120px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #402101;
+}
+footer h6 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+footer nav ul li a{
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px; 
+}
+.social_icon_container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
