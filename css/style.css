@@ -56,7 +56,7 @@ header nav ul {
   background-image: url(../images/cover1.png);
   height: 560px;
 }
-.background_image{
+.background_image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,10 +176,10 @@ h2 {
   height: 314px;
   padding: 16px;
 }
-.card2{
+.card2 {
   margin-inline: 24px;
 }
-.card3{
+.card3 {
   margin-right: 24px;
 }
 .card_div {
@@ -232,19 +232,21 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.sect4  form{
+.sect4 form {
   display: flex;
 }
 .sect4 form input {
   width: 331px;
   height: 56px;
   padding-left: 16px;
-  border-radius: 10px 0px 0px 10px; 
+  border-radius: 10px 0px 0px 10px;
   border: 1px solid #fff;
   background: #d5906e;
+}
+input {
   outline: none;
 }
-.sect4 input::placeholder{
+.sect4 input::placeholder {
   color: #fff;
   font-family: Inter;
   font-size: 16px;
@@ -316,3 +318,188 @@ footer nav ul li a {
   line-height: 24px;
 }
 /* about.html */
+/* about_section1 */
+.about_sect1 {
+  background-image: url(../images/Rectangle\ 107.png);
+  height: 560px;
+}
+.about_sect1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 47px;
+}
+.about_sect1 h2 {
+  text-shadow: 0px 4px 2px #000;
+  line-height: 48px;
+}
+.about_sect1 form {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  border-radius: 10px;
+}
+.about_sect1 form input {
+  padding-left: 16px;
+  height: 56px;
+  width: 408px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #fff;
+  background: #f5f5f5;
+}
+.about_sect1 form input::placeholder {
+  color: rgba(213, 144, 110, 0.52);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about_sect1 button {
+  height: 56px;
+  padding: 15px 53px 15px 54px;
+  border-radius: 0px 10px 10px 0px;
+  background: #b53b1b;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* about_section2  */
+.about_sect2 {
+  background: #ea904f;
+  display: flex;
+  flex-direction: column;
+  height: 1585px;
+  padding: 120px;
+  justify-content: center;
+  gap: 72px;
+}
+.about_grid_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_grid_title button {
+  border-radius: 5px;
+  border: 2px solid #b53b1b;
+  background: #fff;
+  display: flex;
+  width: 160px;
+  height: 45px;
+  padding: 8px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  color: #402101;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.about_grid_title i {
+  transform: rotate(90deg);
+  font-size: 29px;
+}
+.about_grid_container {
+  display: grid;
+  row-gap: 40px;
+  column-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "card7 card8 card9";
+}
+.about_grid_container article {
+  display: flex;
+  width: 384px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  height: 339px;
+  border-radius: 8px;
+  background: #fff;
+}
+.Price_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+.Price_cont div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Price_cont h6 {
+  color: #b53b1b;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Price_cont span {
+  color: #402101;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px; 
+}
+.about_grid_card1 {
+  grid-area: card1;
+}
+.about_grid_card2 {
+  grid-area: card2;
+}
+.about_grid_card3 {
+  grid-area: card3;
+}
+.about_grid_card4 {
+  grid-area: card4;
+}
+.about_grid_card5 {
+  grid-area: card5;
+}
+.about_grid_card6 {
+  grid-area: card6;
+}
+.about_grid_card7 {
+  grid-area: card7;
+}
+.about_grid_card8 {
+  grid-area: card8;
+}
+.about_grid_card9 {
+  grid-area: card9;
+}
+.about_page_number {
+  display: flex;
+  margin-inline: auto;
+}
+.about_page_number button {
+  border: 2px solid #fff;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.active1 {
+  background-color: #b53b1b;
+}
+.noactive1 {
+  background-color: transparent;
+}
+/* contact_page  */
+/* contact_sect1  */
+.contact_sect1{
+  background-image: url(../images/Rectangle\ 108.png);
+  height: 720px;
+}
