@@ -29,7 +29,7 @@ header nav ul {
 .active,
 .noactive {
   color: #d5906e;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@ header nav ul {
 }
 .user_container h6 {
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -73,7 +73,7 @@ header nav ul {
 }
 h2 {
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -93,7 +93,7 @@ h2 {
   background: #fff;
   box-shadow: 0px 4px 4px 0px #581504;
   color: #b53b1b;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -147,10 +147,17 @@ h2 {
   border-radius: 8px;
   background: #fff;
   color: #b53b1b;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+}
+.sect2 button:hover {
+  background-color: transparent;
+  animation: ease-in;
+  transition-duration: 1s;
+  color: #fff;
+  border: 1px solid #fff;
 }
 /* section3  */
 .sect3 {
@@ -190,7 +197,7 @@ h2 {
 }
 .card h5 {
   color: #b53b1b;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -202,7 +209,7 @@ h2 {
 }
 .price p {
   color: #b53b1b;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -212,7 +219,7 @@ h2 {
   background: #b53b1b;
   padding: 6px 19px;
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -248,7 +255,7 @@ input {
 }
 .sect4 input::placeholder {
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -256,7 +263,7 @@ input {
   height: 56px;
   padding: 17px 25px 17px 26px;
   color: #402101;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -275,7 +282,7 @@ footer {
 }
 footer h6 {
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -288,7 +295,7 @@ footer nav ul {
 }
 footer nav ul li a {
   color: #fff;
-  font-family: Rubik;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -312,7 +319,7 @@ footer nav ul li a {
 }
 .contact_container span {
   color: #fff;
-  font-family: Rubik;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -350,7 +357,7 @@ footer nav ul li a {
 }
 .about_sect1 form input::placeholder {
   color: rgba(213, 144, 110, 0.52);
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -362,7 +369,7 @@ footer nav ul li a {
   background: #b53b1b;
   border: 2px solid #fff;
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -394,7 +401,7 @@ footer nav ul li a {
   align-items: center;
   gap: 24px;
   color: #402101;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -438,13 +445,13 @@ footer nav ul li a {
 }
 .Price_cont h6 {
   color: #b53b1b;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 .Price_cont span {
   color: #402101;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -478,15 +485,20 @@ footer nav ul li a {
 }
 .about_page_number {
   display: flex;
-  margin-inline: auto;
+  /* margin-inline: auto; */
+  justify-content: center;
 }
-.about_page_number button {
+.about_page_number li {
   border: 2px solid #fff;
   width: 56px;
   height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_page_number a {
   color: #fff;
-  font-family: Inter;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -553,8 +565,7 @@ textarea {
 .contact_sect1 input::placeholder,
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.76);
-  font-family: Inter;
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;  font-size: 14px;
   font-weight: 400;
   line-height: 17px;
 }
@@ -562,7 +573,7 @@ textarea::placeholder {
   height: 56px;
   padding: 19px 42px 18px 43px;
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -609,7 +620,7 @@ textarea::placeholder {
 }
 .location_left_side span {
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
