@@ -280,6 +280,26 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.sect4 h2 {
+  animation: shine 0.5s infinite;
+}
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 0 #f5f5f5;
+  }
+  25% {
+    text-shadow: 0 0 10px #f5f5f5;
+  }
+  50% {
+    text-shadow: 0 0 20px #f5f5f5;
+  }
+  75% {
+    text-shadow: 0 0 30px #f5f5f5;
+  }
+  100% {
+    text-shadow: 0 0 40px #f5f5f5;
+  }
+}
 .sect4 form {
   display: flex;
 }
@@ -395,6 +415,7 @@ footer nav ul li a {
   text-shadow: 0px 4px 2px #000;
   line-height: 48px;
 }
+
 .about_sect1 form {
   display: flex;
   height: 56px;
@@ -428,7 +449,7 @@ footer nav ul li a {
   font-weight: 400;
   line-height: 26px;
 }
-.about_sect1 button:hover{
+.about_sect1 button:hover {
   background-color: transparent;
   font-weight: bold;
   transition-duration: 1s;
@@ -451,9 +472,31 @@ footer nav ul li a {
   width: 100%;
   padding-inline: 120px;
 }
-.about_grid_title h2:hover{
-  text-shadow: 2px 2px 2px #1b0e01;
+.about_sect2 h2 {
+  animation: shining 1s infinite;
 }
+@keyframes shining {
+  0% {
+    text-shadow: 0 0 0 #f5f5f5;
+  }
+  25% {
+    text-shadow: 0 0 10px #f5f5f5;
+  }
+  50% {
+    text-shadow: 0 0 20px #f5f5f5;
+  }
+  75% {
+    text-shadow: 0 0 30px #f5f5f5;
+  }
+  100% {
+    text-shadow: 0 0 40px #f5f5f5;
+  }
+}
+.about_grid_title h2:hover {
+  text-shadow: 2px 2px 2px #1b0e01;
+  animation: none;
+}
+
 .about_grid_title button {
   border-radius: 5px;
   border: 2px solid #b53b1b;
@@ -471,7 +514,7 @@ footer nav ul li a {
   font-weight: 400;
   line-height: 29px;
 }
-.about_grid_title button:hover{
+.about_grid_title button:hover {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
@@ -503,17 +546,17 @@ footer nav ul li a {
   border-radius: 8px;
   background: #fff;
 }
-.about_grid_container article:hover{
+.about_grid_container article:hover {
   background-color: transparent;
   border: 2px solid #fff;
   box-shadow: 5px 5px 10px 0 #d5906e, -5px -5px 10px 0 #d5906e;
-span{
-  color: #fff;
-}
-h6{
-  color: #fff;
-  font-weight: bold;
-}
+  span {
+    color: #fff;
+  }
+  h6 {
+    color: #fff;
+    font-weight: bold;
+  }
 }
 .image_width {
   width: 100%;
@@ -543,7 +586,7 @@ h6{
   font-weight: 400;
   line-height: 32px;
 }
-.Price_cont img:hover{
+.Price_cont img:hover {
   filter: brightness(120%);
 }
 .about_page_number {
@@ -558,10 +601,11 @@ h6{
   justify-content: center;
   align-items: center;
 }
-.about_page_number li:hover{
-  a{font-size: 22px;
-  text-shadow: 2px 2px 0 #1b0e01;
-}
+.about_page_number li:hover {
+  a {
+    font-size: 22px;
+    text-shadow: 2px 2px 0 #1b0e01;
+  }
 }
 .about_page_number a {
   color: #fff;
@@ -650,7 +694,7 @@ textarea::placeholder {
   background: #ff543e;
   border: none;
 }
-.input_container button:hover{
+.input_container button:hover {
   font-weight: bold;
   background-color: #be2701;
   transition-duration: 2s;
