@@ -23,6 +23,9 @@
   .contact_sect1 {
     padding-left: 32px;
   }
+  .contact_sect2 {
+    padding: 120px 116px;
+  }
 
   /* .about_grid_container{
     display: flex;

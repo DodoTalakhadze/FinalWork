@@ -269,7 +269,7 @@ input {
 /* footer  */
 footer {
   width: inherit;
-  display: inline-flex;
+  display: flex;
   padding: 80px 120px;
   justify-content: space-between;
   align-items: flex-start;

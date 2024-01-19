@@ -1,0 +1,51 @@
+@media (max-width: 481px) {
+  /* header  */
+    header {
+    padding: 9px 20px;
+  }
+  /* section1  */
+  .sect1 {
+    height: 304px;
+  }
+  /* section2  */
+  .sect2 {
+    height: 476px;
+  }
+  /* section3  */
+  .sect3 {
+    height: 514px;
+  }
+  .card_container{
+    margin-left: 20px;
+  }
+  /* section4  */
+  .sect4 {
+    height: 320px;
+  }
+  
+  /* about_section1  */
+  .about_section1 {
+    height: 480px;
+  }
+}
+@media (max-width: 420px) {
+h2{
+    font-size: 24px;
+}
+/* index_page  */
+.grid_container{
+    padding-inline: 10px;
+    gap: 10px;
+}
+.sect4 form{
+    width: 300px;
+}
+/* about_page */
+.about_sect1 form {
+width: 300px;
+}
+.about_sect1 form button{
+padding: 10px;
+font-size: 16px;
+}
+}
