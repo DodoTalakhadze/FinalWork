@@ -29,7 +29,7 @@ header nav ul {
 .active,
 .noactive {
   color: #d5906e;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@ header nav ul {
 }
 .user_container h6 {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -73,7 +73,7 @@ header nav ul {
 }
 h2 {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -85,7 +85,6 @@ h2 {
   display: flex;
   width: 168px;
   height: 48px;
-  padding: 12px 45px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -93,7 +92,7 @@ h2 {
   background: #fff;
   box-shadow: 0px 4px 4px 0px #581504;
   color: #b53b1b;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -147,7 +146,7 @@ h2 {
   border-radius: 8px;
   background: #fff;
   color: #b53b1b;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -170,10 +169,12 @@ h2 {
   gap: 40px;
 }
 .card_container {
+  display: flex;
+  justify-content: center;
   column-gap: 24px;
   overflow: auto;
   white-space: nowrap;
-  /* 1230-დან გაუჩნდეს სქროლი width: 980px; */
+  width: 100%;
 }
 .card {
   border-radius: 8px;
@@ -183,12 +184,6 @@ h2 {
   height: 314px;
   padding: 16px;
 }
-.card2 {
-  margin-inline: 24px;
-}
-.card3 {
-  margin-right: 24px;
-}
 .card_div {
   display: flex;
   flex-direction: column;
@@ -197,7 +192,7 @@ h2 {
 }
 .card h5 {
   color: #b53b1b;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -209,7 +204,7 @@ h2 {
 }
 .price p {
   color: #b53b1b;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -219,7 +214,7 @@ h2 {
   background: #b53b1b;
   padding: 6px 19px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -255,7 +250,7 @@ input {
 }
 .sect4 input::placeholder {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -263,7 +258,7 @@ input {
   height: 56px;
   padding: 17px 25px 17px 26px;
   color: #402101;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -282,7 +277,7 @@ footer {
 }
 footer h6 {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -295,7 +290,7 @@ footer nav ul {
 }
 footer nav ul li a {
   color: #fff;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -319,7 +314,7 @@ footer nav ul li a {
 }
 .contact_container span {
   color: #fff;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -357,7 +352,7 @@ footer nav ul li a {
 }
 .about_sect1 form input::placeholder {
   color: rgba(213, 144, 110, 0.52);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -369,7 +364,7 @@ footer nav ul li a {
   background: #b53b1b;
   border: 2px solid #fff;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -401,7 +396,7 @@ footer nav ul li a {
   align-items: center;
   gap: 24px;
   color: #402101;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -411,19 +406,25 @@ footer nav ul li a {
   font-size: 29px;
 }
 .about_grid_container {
-  display: grid;
+  /* display: grid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 24px;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "card1 card2 card3"
     "card4 card5 card6"
-    "card7 card8 card9";
+    "card7 card8 card9"; */
 }
 .about_grid_container article {
   display: flex;
-  width: 384px;
+  /* width: 100%; */
+  width: calc(384 / 1200 * 100%);
   padding: 16px;
   flex-direction: column;
   justify-content: center;
@@ -431,6 +432,10 @@ footer nav ul li a {
   height: 339px;
   border-radius: 8px;
   background: #fff;
+}
+.image_width{
+  width: 100%;
+  height: 100%;
 }
 .Price_cont {
   display: flex;
@@ -445,18 +450,18 @@ footer nav ul li a {
 }
 .Price_cont h6 {
   color: #b53b1b;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 .Price_cont span {
   color: #402101;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
-.about_grid_card1 {
+/* .about_grid_card1 {
   grid-area: card1;
 }
 .about_grid_card2 {
@@ -482,10 +487,9 @@ footer nav ul li a {
 }
 .about_grid_card9 {
   grid-area: card9;
-}
+} */
 .about_page_number {
   display: flex;
-  /* margin-inline: auto; */
   justify-content: center;
 }
 .about_page_number li {
@@ -498,7 +502,8 @@ footer nav ul li a {
 }
 .about_page_number a {
   color: #fff;
-  font-family: 'Inter', sans-serif;  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -565,7 +570,8 @@ textarea {
 .contact_sect1 input::placeholder,
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.76);
-  font-family: 'Inter', sans-serif;  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   line-height: 17px;
 }
@@ -573,7 +579,7 @@ textarea::placeholder {
   height: 56px;
   padding: 19px 42px 18px 43px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -620,7 +626,7 @@ textarea::placeholder {
 }
 .location_left_side span {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
