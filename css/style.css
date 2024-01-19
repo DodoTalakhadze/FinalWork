@@ -36,6 +36,10 @@ header nav ul {
 .noactive {
   color: #fff;
 }
+header ul li a:hover {
+  text-shadow: 2px 2px 0 rgba(129, 70, 12, 0.9);
+  font-size: 20px;
+}
 .user_container {
   display: flex;
   column-gap: 16px;
@@ -47,9 +51,18 @@ header nav ul {
   font-size: 16px;
   font-weight: 400;
 }
+.user_container h6:hover {
+  font-size: 18px;
+  color: #d5906e;
+}
 .user_container i {
   color: #ffffff;
   font-size: 24px;
+}
+.user_container i:hover {
+  rotate: 360deg;
+  transition-duration: 2s;
+  color: #d5906e;
 }
 /* section1  */
 .sect1 {
@@ -81,6 +94,10 @@ h2 {
 .sect1 h2 {
   text-shadow: 4px 4px 2px #581504;
 }
+.sect1 h2:hover {
+  text-shadow: none;
+  transition-duration: 1s;
+}
 .sect1 button {
   display: flex;
   width: 168px;
@@ -96,6 +113,12 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+.sect1 button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: bold;
 }
 /* section2  */
 .sect2 {
@@ -120,6 +143,9 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.grid_container div:hover {
+  filter: grayscale(100%);
 }
 .grid_item1 {
   grid-area: item1;
@@ -167,6 +193,9 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+.sect3 h2 {
+  text-shadow: 2px 4px 2px #000;
 }
 .card_container {
   display: flex;
@@ -220,6 +249,23 @@ h2 {
   line-height: 20px;
   border: none;
 }
+.price button:hover {
+  font-size: 14px;
+  transition-duration: 1s;
+  text-shadow: 2px 1px 2px #1b0e01;
+  background: #be2701;
+}
+.card:hover {
+  border-radius: 20px;
+  background-color: #c5a99b;
+  transition-duration: 1s;
+  img {
+    overflow: hidden;
+    transform: scale(110%);
+    border-radius: 20px;
+    transition-duration: 1s;
+  }
+}
 /* section4 */
 .sect4 {
   background-image: url(../images/Rectangle\ 98.png);
@@ -264,7 +310,12 @@ input {
   line-height: 22px;
   border-radius: 0px 10px 10px 0px;
   background: #fff;
-  border: none;
+  border: 1px solid #fff;
+}
+.sect4 button:hover {
+  background-color: #d5906e;
+  color: #fff;
+  transition-duration: 1s;
 }
 /* footer  */
 footer {
@@ -300,6 +351,10 @@ footer nav ul li a {
   gap: 24px;
   margin-top: 32px;
 }
+.social_icon_container img:hover {
+  rotate: 360deg;
+  transition-duration: 2s;
+}
 .contact_container {
   display: flex;
   flex-direction: column;
@@ -311,6 +366,10 @@ footer nav ul li a {
 .contact_container i {
   color: #ffffff;
   font-size: 18px;
+}
+.contact_container i:hover {
+  color: #d5906e;
+  font-size: 20px;
 }
 .contact_container span {
   color: #fff;
@@ -369,20 +428,31 @@ footer nav ul li a {
   font-weight: 400;
   line-height: 26px;
 }
+.about_sect1 button:hover{
+  background-color: transparent;
+  font-weight: bold;
+  transition-duration: 1s;
+}
 /* about_section2  */
 .about_sect2 {
   background: #ea904f;
   display: flex;
   flex-direction: column;
   height: 1585px;
-  padding: 120px;
+  padding-block: 120px;
   justify-content: center;
+  align-items: center;
   gap: 72px;
 }
 .about_grid_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-inline: 120px;
+}
+.about_grid_title h2:hover{
+  text-shadow: 2px 2px 2px #1b0e01;
 }
 .about_grid_title button {
   border-radius: 5px;
@@ -401,30 +471,30 @@ footer nav ul li a {
   font-weight: 400;
   line-height: 29px;
 }
+.about_grid_title button:hover{
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  transition-duration: 1s;
+}
 .about_grid_title i {
   transform: rotate(90deg);
   font-size: 29px;
 }
+
 .about_grid_container {
-  /* display: grid; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  overflow: hidden;
   row-gap: 40px;
   column-gap: 24px;
-  /* grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "card1 card2 card3"
-    "card4 card5 card6"
-    "card7 card8 card9"; */
 }
 .about_grid_container article {
   display: flex;
-  /* width: 100%; */
-  width: calc(384 / 1200 * 100%);
+  width: 384px;
   padding: 16px;
   flex-direction: column;
   justify-content: center;
@@ -433,7 +503,19 @@ footer nav ul li a {
   border-radius: 8px;
   background: #fff;
 }
-.image_width{
+.about_grid_container article:hover{
+  background-color: transparent;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px 0 #d5906e, -5px -5px 10px 0 #d5906e;
+span{
+  color: #fff;
+}
+h6{
+  color: #fff;
+  font-weight: bold;
+}
+}
+.image_width {
   width: 100%;
   height: 100%;
 }
@@ -461,33 +543,9 @@ footer nav ul li a {
   font-weight: 400;
   line-height: 32px;
 }
-/* .about_grid_card1 {
-  grid-area: card1;
+.Price_cont img:hover{
+  filter: brightness(120%);
 }
-.about_grid_card2 {
-  grid-area: card2;
-}
-.about_grid_card3 {
-  grid-area: card3;
-}
-.about_grid_card4 {
-  grid-area: card4;
-}
-.about_grid_card5 {
-  grid-area: card5;
-}
-.about_grid_card6 {
-  grid-area: card6;
-}
-.about_grid_card7 {
-  grid-area: card7;
-}
-.about_grid_card8 {
-  grid-area: card8;
-}
-.about_grid_card9 {
-  grid-area: card9;
-} */
 .about_page_number {
   display: flex;
   justify-content: center;
@@ -499,6 +557,11 @@ footer nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.about_page_number li:hover{
+  a{font-size: 22px;
+  text-shadow: 2px 2px 0 #1b0e01;
+}
 }
 .about_page_number a {
   color: #fff;
@@ -587,6 +650,11 @@ textarea::placeholder {
   background: #ff543e;
   border: none;
 }
+.input_container button:hover{
+  font-weight: bold;
+  background-color: #be2701;
+  transition-duration: 2s;
+}
 /* contact_section2 */
 .contact_sect2 {
   height: 648px;
@@ -623,6 +691,10 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   gap: 14px;
+}
+.location_left_side div a:hover {
+  rotate: -360deg;
+  transition-duration: 2s;
 }
 .location_left_side span {
   color: #fff;

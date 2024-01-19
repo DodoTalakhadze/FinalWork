@@ -27,6 +27,31 @@
   .about_section1 {
     height: 480px;
   }
+  .about_grid_title h2{
+    font-size: 16px;
+  }
+}
+@media (max-width: 460px) {
+    .about_sect2{
+        padding-inline: 10px;
+    }
+    .about_grid_title button{
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        gap: 12px;
+    }
+    .about_grid_title i{
+        font-size: 14px;
+    }
+    .about_grid_container article{
+        width: 300px;
+    }
+    .about_page_number li{
+        width: 35px;
+        height: 35px;
+    }
+
 }
 @media (max-width: 420px) {
 h2{

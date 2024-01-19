@@ -13,7 +13,20 @@
     padding-left: 122px;
   }
 }
-
+@media (max-width: 1264px) {
+  .about_grid_container article {
+    width: 468px;
+    width: calc(468 / 1024 * 100%);
+  }
+.image_width{
+  height: 224px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.about_grid_title{
+  padding-inline: 32px;
+}
+}
 @media (max-width: 1025px) {
   /* padding  */
   header,
@@ -26,22 +39,7 @@
   .contact_sect2 {
     padding: 120px 116px;
   }
-
-  /* .about_grid_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .about_grid_container article {
-    width: 468px;
-  }
-  .about_grid_card3,
-  .about_grid_card6,
-  .about_grid_card9 {
-    display: none;
-  } */
+  
 }
 @media (max-width: 900px) {
   /* padding  */
